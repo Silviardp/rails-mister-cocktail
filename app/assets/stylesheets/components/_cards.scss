@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   margin: 15px;
+  width: 100%;
 }
 
 // Smallest device
@@ -40,14 +41,14 @@
   }
 }
 
-.cards-category {
+.card-category {
   background-size: cover;
   background-position: center;
   height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #EE6267;
+  color: white;
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
