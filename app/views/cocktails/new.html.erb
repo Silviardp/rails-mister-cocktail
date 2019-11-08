@@ -6,6 +6,7 @@
   <%= f.error_notification %>
   <%= f.input :name %>
   <%= f.input :photo, as: :file %>
+  <%= f.input :photo_cache, as: :hidden %>
   <%= f.button :submit, class: "btn-primary" %>
   <%= link_to "Cancel", cocktails_path, class: "btn btn-outline-primary" %>
 <% end %>
