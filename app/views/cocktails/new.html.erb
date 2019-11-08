@@ -1,0 +1,15 @@
+<div class="container text-center p-5">
+  <h1>Add a new cocktail</h1>
+
+<div class="container jumbotron align-items-center">
+  <%= simple_form_for @cocktail do |f| %>
+  <%= f.error_notification %>
+  <%= f.input :name %>
+  <%= f.input :photo, as: :file %>
+  <%= f.button :submit, class: "btn-primary" %>
+  <%= link_to "Cancel", cocktails_path, class: "btn btn-outline-primary" %>
+<% end %>
+</div>
+
+</div>
+
