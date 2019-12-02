@@ -1,15 +1,15 @@
-<div class="container text-center p-5">
-  <h1>Add a New Cocktail</h1>
+<div class="container mt-3">
+  <h1 class="text-center">Add a New Cocktail</h1>
+  <div class="row mt-3">
+    <div class="col">
+      <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.error_notification %>
+      <%= f.input :description %>
+      <%= f.association :ingredient %>
+      <%= f.button :submit, class: "btn-primary" %>
+      <%= link_to "Cancel", cocktails_path, class: "btn btn-outline-primary" %>
+      <% end %>
+    </div>
+  </div>
 </div>
-
-<div class="container jumbotron align-items-center">
-  <%= simple_form_for [@cocktail, @dose] do |f| %>
-  <%= f.error_notification %>
-  <%= f.input :description %>
-  <%= f.association :ingredient %>
-  <%= f.button :submit, class: "btn-primary" %>
-  <%= link_to "Cancel", cocktails_path, class: "btn btn-outline-primary" %>
-<% end %>
-</div>
-
 
